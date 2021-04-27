@@ -18,12 +18,29 @@ pipeline {
       }
     }
 
+    stage('Docker Build') {
+      steps {
+        script {
+          image = docker.build registry
+        }
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        script {
+          docker.withRegistry('', credentials) {
+            image.push()
+          }
+        }
+      }
+    }
   }
   tools {
     maven 'Maven 3.6.3'
   }
   environment {
-    registry = 'billpeers/ense375-groupe'
+    registry = 'billpeers/ense_final'
     credentials = 'dockerhub_id'
     image = ''
   }

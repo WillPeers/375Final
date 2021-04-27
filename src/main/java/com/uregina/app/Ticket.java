@@ -51,7 +51,7 @@ public class Ticket
 			try{
 				totalFlightTime += ticket.get(i).calculateFlightTime();
 			} catch(Exception e) {
-				System.out.println("1");
+				System.out.println("Error: " + e);
 			}
 
 			//1
@@ -63,7 +63,7 @@ public class Ticket
 				try{
 					totalLayoverTime += Flight.calculateLayoverTime(ticket.get(i), ticket.get(i + 1));
 				} catch(Exception e) {
-					
+					System.out.println("Error: " + e);
 				}
 
 				//7
@@ -92,7 +92,7 @@ public class Ticket
 				return false;
 			}
 		} catch(Exception e) {
-
+			System.out.println("Error: " + e);
 		}
 
 		//end of your code
@@ -128,5 +128,22 @@ public class Ticket
 		}
 		//Todo : end of your code
 		return false;
+	}
+
+	public static int getTimeDifference() {
+		int diff = 0;
+
+		//Get time zone difference from IATA equivalent database
+		//For example lets say difference 1 is +1 and difference 2 is -5
+
+		//Check the time of the flight
+		//If the time is during daylight savings time, adjust the time difference
+		
+		//Add the time zone differences so the user knows the time differences between
+		//	the arrival and departure airports
+
+		//return time differences
+
+		return diff;
 	}
 }

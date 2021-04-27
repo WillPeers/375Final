@@ -91,7 +91,7 @@ public class App
 		try{
 			System.out.println( Ticket.checkTicket(ticket,maxFlightsCount,maxFlightTime,maxLayoverTime,hasSchengenVisa)? "\tValid":"\tInvalid" );
 		} catch(Exception e) {
-
+			
 		}
     }
 	// prompt for to enter the value for the "name" until getting a valid integer

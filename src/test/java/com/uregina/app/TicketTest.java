@@ -28,7 +28,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 30000000, 10000000, 10000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 0" + e.getMessage());
+            
         }
     }
 
@@ -83,7 +83,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 300000, 10000000, 1, true));
         } catch(Exception e) {
-            
+
         }
     }
 
@@ -104,7 +104,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 300000, 10000000, 100000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 9" + e.getMessage());
+            
         }
     }
 
@@ -122,7 +122,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 100000, 9999999, 10000000, false));
         } catch(Exception e) {
-            System.out.println("Whoops 4" + e.getMessage());
+           
         }
     }
 
@@ -140,7 +140,7 @@ public class TicketTest
 
             assertTrue(Ticket.checkTicket(ticket, 100000, 9999999, 10000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 3" + e.getMessage());
+            
         }
     }
 
@@ -161,7 +161,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 30000, 10000000, 1000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 2");
+            
         }
     }
 
@@ -182,7 +182,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 30000, 10000000, 1000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 1");
+
         }
     }
 }
