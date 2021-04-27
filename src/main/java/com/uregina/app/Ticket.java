@@ -40,6 +40,9 @@ public class Ticket
 	{
 		//Todo: add your code here
 
+		//1
+
+
 		//2
 		if(ticket.size() > maxFlightsCount)
 			return false;
@@ -52,6 +55,15 @@ public class Ticket
 				totalFlightTime += ticket.get(i).calculateFlightTime();
 			} catch(Exception e) {
 				System.out.println("1");
+			}
+
+			//1
+			try{
+				if(ticket.get(i).getArrivalAirport().length() != 3 || ticket.get(i).getDepatureAirport().length() != 3) {
+					throw new InvalidIATAException();
+				}
+			} catch(Exception e) {
+				
 			}
 
 			if(i + 1 < ticket.size()) {
@@ -87,7 +99,7 @@ public class Ticket
 				return false;
 			}
 		} catch(Exception e) {
-			
+
 		}
 
 		//end of your code

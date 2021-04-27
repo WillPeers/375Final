@@ -5,6 +5,7 @@ com\uregina\app\App.class
 com\uregina\app\Ticket.class
 com\uregina\app\Date.class
 com\uregina\exceptions\InvalidDateException.class
+com\uregina\exceptions\InvalidIATAException.class
 com\uregina\exceptions\NegativeTimeException.class
 com\uregina\app\Time24.class
 com\uregina\app\AmPm.class

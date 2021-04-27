@@ -15,18 +15,21 @@ import jdk.jfr.Timestamp;
  */
 public class TicketTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
-
-    @Test
+    @Test(expected = InvalidIATAException.class)
     public void invalidIATA() {
-        assertTrue( true );
+        DateTime d1, d2;
+
+        try{
+            d1 = new DateTime(new Date(4, 25, 1999), new Time12(1, 2, AmPm.am));
+            d2 = new DateTime(new Date(4, 25, 1999), new Time12(10, 2, AmPm.pm));
+
+            ArrayList<Flight> ticket = new ArrayList<Flight>();
+            ticket.add(new Flight("YQRRRRRR", "D", d1, d2));           
+
+            assertFalse(Ticket.checkTicket(ticket, 3, 1, 10000000, true));
+        } catch(Exception e) {
+            System.out.println("Whoops 0" + e.getMessage());
+        }
     }
 
     @Test

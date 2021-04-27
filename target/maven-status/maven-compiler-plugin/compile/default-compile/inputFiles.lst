@@ -1,5 +1,6 @@
 C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\MoreThanOneDayException.java
 C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\InvalidDateException.java
+C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\InvalidIATAException.java
 C:\dev\Git\375Final\src\main\java\com\uregina\app\Time24.java
 C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\NegativeTimeException.java
 C:\dev\Git\375Final\src\main\java\com\uregina\app\Date.java

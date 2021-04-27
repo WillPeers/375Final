@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.TimeTest" time="0.003" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.LessThanTest" time="0.003" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -55,8 +55,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="time1PM_time2AM_ValidTimes" classname="com.uregina.app.TimeTest" time="0"/>
-  <testcase name="bothPM_ValidTimes" classname="com.uregina.app.TimeTest" time="0"/>
-  <testcase name="bothAM_ValidTimes" classname="com.uregina.app.TimeTest" time="0"/>
-  <testcase name="time1AM_time2PM_ValidTimes" classname="com.uregina.app.TimeTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthSmaller_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthSmaller_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthBigger_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthBigger_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthSame_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthSame_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthBigger_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1AllSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthSmaller_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthSame_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthSmaller_d1YearSame" classname="com.uregina.app.LessThanTest" time="0.001"/>
+  <testcase name="d1DayBigger_d1MonthBigger_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthBigger_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthSame_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthSame_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthSmaller_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DayBigger_d1MonthSmaller_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthSame_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1AllBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthSame_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySame_d1MonthBigger_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthBigger_d1YearBigger" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthSame_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthBigger_d1YearSmaller" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="AllEqual" classname="com.uregina.app.LessThanTest" time="0"/>
+  <testcase name="d1DaySmaller_d1MonthBigger_d1YearSame" classname="com.uregina.app.LessThanTest" time="0"/>
 </testsuite>

@@ -1,23 +1,27 @@
 -------------------------------------------------------------------------------
 Test set: com.uregina.app.TicketTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.uregina.app.TicketTest
-validFlights(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< FAILURE!
+Tests run: 9, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.uregina.app.TicketTest
+validFlights(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
-	at com.uregina.app.TicketTest.validFlights(TicketTest.java:180)
+	at com.uregina.app.TicketTest.validFlights(TicketTest.java:183)
 
 tooMuchFlightTime(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<com.uregina.exceptions.TooMuchFlightTimeException> but was<java.lang.AssertionError>
-	at com.uregina.app.TicketTest.tooMuchFlightTime(TicketTest.java:60)
+	at com.uregina.app.TicketTest.tooMuchFlightTime(TicketTest.java:63)
+
+invalidIATA(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<com.uregina.exceptions.InvalidIATAException> but was<java.lang.AssertionError>
+	at com.uregina.app.TicketTest.invalidIATA(TicketTest.java:29)
 
 noSchengenVisa(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
-	at com.uregina.app.TicketTest.noSchengenVisa(TicketTest.java:120)
+	at com.uregina.app.TicketTest.noSchengenVisa(TicketTest.java:123)
 
 triggerIncorrectFlightOrder(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: Expected exception: com.uregina.exceptions.IncorrectFlightOrderException
 
 tooMuchLayover(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<com.uregina.exceptions.TooMuchFlightTimeException> but was<java.lang.AssertionError>
-	at com.uregina.app.TicketTest.tooMuchLayover(TicketTest.java:81)
+	at com.uregina.app.TicketTest.tooMuchLayover(TicketTest.java:84)
 

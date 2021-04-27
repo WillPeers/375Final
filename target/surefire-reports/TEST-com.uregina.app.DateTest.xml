@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.DateTest" time="0.002" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.DateTest" time="0.003" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire5677899638664957103\surefirebooter8912241837589025958.jar C:\Users\William\AppData\Local\Temp\surefire5677899638664957103 2021-04-27T14-55-29_183-jvmRun1 surefire12294868414398954354tmp surefire_0121089164174669333tmp"/>
+    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire14029710765192186460\surefirebooter15545746643047741992.jar C:\Users\William\AppData\Local\Temp\surefire14029710765192186460 2021-04-27T16-03-47_995-jvmRun1 surefire3199549465107937313tmp surefire_01055398599105231574tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\Git\375Final\target\test-classes;C:\dev\Git\375Final\target\classes;C:\Users\William\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\William\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire5677899638664957103\surefirebooter8912241837589025958.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire14029710765192186460\surefirebooter15545746643047741992.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -57,6 +57,6 @@
   </properties>
   <testcase name="date2AfterDate1" classname="com.uregina.app.DateTest" time="0"/>
   <testcase name="datesAreTheExactSame" classname="com.uregina.app.DateTest" time="0"/>
-  <testcase name="datesNotTheSameButConsecutive" classname="com.uregina.app.DateTest" time="0"/>
+  <testcase name="datesNotTheSameButConsecutive" classname="com.uregina.app.DateTest" time="0.001"/>
   <testcase name="date1AfterDate2" classname="com.uregina.app.DateTest" time="0"/>
 </testsuite>
