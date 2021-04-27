@@ -1,18 +1,10 @@
 pipeline {
-  environment {
-    registry = "billpeers/ense375-groupe"
-    credentials = 'dockerhub_id'
-    image = '';
-  }
   agent any
-  tools {
-    maven 'Maven 3.6.3'
-  }
   stages {
     stage('Build') {
-      steps{
+      steps {
         sh 'mvn compile -f pom.xml'
-      } 
+      }
     }
 
     stage('Test') {
@@ -20,5 +12,14 @@ pipeline {
         sh 'mvn test -f pom.xml'
       }
     }
+
+  }
+  tools {
+    maven 'Maven 3.6.3'
+  }
+  environment {
+    registry = 'billpeers/ense375-groupe'
+    credentials = 'dockerhub_id'
+    image = ''
   }
 }
