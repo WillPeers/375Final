@@ -40,9 +40,6 @@ public class Ticket
 	{
 		//Todo: add your code here
 
-		//1
-
-
 		//2
 		if(ticket.size() > maxFlightsCount)
 			return false;
@@ -58,12 +55,8 @@ public class Ticket
 			}
 
 			//1
-			try{
-				if(ticket.get(i).getArrivalAirport().length() != 3 || ticket.get(i).getDepatureAirport().length() != 3) {
-					throw new InvalidIATAException();
-				}
-			} catch(Exception e) {
-				
+			if(ticket.get(i).getArrivalAirport().length() != 3 || ticket.get(i).getDepatureAirport().length() != 3) {
+					return false;
 			}
 
 			if(i + 1 < ticket.size()) {
@@ -75,7 +68,7 @@ public class Ticket
 
 				//7
 				if(ticket.get(i).getArrivalAirport() != ticket.get(i+1).getDepatureAirport()) {
-					throw new IncorrectFlightOrderException();
+					return false;
 				}
 
 				//5
@@ -90,7 +83,7 @@ public class Ticket
 
 		//3 & 4
 		if(totalFlightTime > maxFlightTime || totalLayoverTime > maxLayoverTime) {
-			throw new TooMuchFlightTimeException();
+			return false;
 		}
 
 		//6

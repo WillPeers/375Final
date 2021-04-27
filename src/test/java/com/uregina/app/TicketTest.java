@@ -15,7 +15,7 @@ import jdk.jfr.Timestamp;
  */
 public class TicketTest 
 {
-    @Test(expected = InvalidIATAException.class)
+    @Test
     public void invalidIATA() {
         DateTime d1, d2;
 
@@ -26,7 +26,7 @@ public class TicketTest
             ArrayList<Flight> ticket = new ArrayList<Flight>();
             ticket.add(new Flight("YQRRRRRR", "D", d1, d2));           
 
-            assertFalse(Ticket.checkTicket(ticket, 3, 1, 10000000, true));
+            assertFalse(Ticket.checkTicket(ticket, 30000000, 10000000, 10000000, true));
         } catch(Exception e) {
             System.out.println("Whoops 0" + e.getMessage());
         }
@@ -49,7 +49,7 @@ public class TicketTest
         }
     }
 
-    @Test(expected = TooMuchFlightTimeException.class)
+    @Test
     public void tooMuchFlightTime() {
         DateTime d1, d2;
 
@@ -60,13 +60,13 @@ public class TicketTest
             ArrayList<Flight> ticket = new ArrayList<Flight>();
             ticket.add(new Flight("YQR", "DAA", d1, d2));           
 
-            assertFalse(Ticket.checkTicket(ticket, 3, 1, 10000000, true));
+            assertFalse(Ticket.checkTicket(ticket, 300000, 1, 10000000, true));
         } catch(Exception e) {
             System.out.println("Whoops 6" + e.getMessage());
         }
     }
 
-    @Test(expected = TooMuchFlightTimeException.class)
+    @Test
     public void tooMuchLayover() {
         DateTime d1, d2, d3, d4;
 
@@ -81,13 +81,13 @@ public class TicketTest
             ticket.add(new Flight("YQR", "DAA", d1, d2));
             ticket.add(new Flight("DAA", "BRU", d3, d4));           
 
-            assertFalse(Ticket.checkTicket(ticket, 3, 10000000, 1, true));
+            assertFalse(Ticket.checkTicket(ticket, 300000, 10000000, 1, true));
         } catch(Exception e) {
-            System.out.println("Whoops 5" + e.getMessage());
+            
         }
     }
 
-    @Test(expected = IncorrectFlightOrderException.class)
+    @Test
     public void triggerIncorrectFlightOrder() {
         DateTime d1, d2, d3, d4;
 
@@ -102,7 +102,7 @@ public class TicketTest
             ticket.add(new Flight("YQR", "DAA", d1, d2));
             ticket.add(new Flight("VIE", "BRU", d3, d4));           
 
-            assertFalse(Ticket.checkTicket(ticket, 3, 10000000, 1, true));
+            assertFalse(Ticket.checkTicket(ticket, 300000, 10000000, 100000, true));
         } catch(Exception e) {
             System.out.println("Whoops 9" + e.getMessage());
         }
@@ -161,7 +161,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 30000, 10000000, 1000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 2" + e.getMessage());
+            System.out.println("Whoops 2");
         }
     }
 
@@ -182,7 +182,7 @@ public class TicketTest
 
             assertFalse(Ticket.checkTicket(ticket, 30000, 10000000, 1000000, true));
         } catch(Exception e) {
-            System.out.println("Whoops 1" + e.getMessage());
+            System.out.println("Whoops 1");
         }
     }
 }

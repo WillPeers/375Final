@@ -52,9 +52,6 @@ public class DateTime
 		int diff=0;
 		//Todo: add your code here
 
-		if(diff == 0)
-			throw new MoreThanOneDayException();
-
 		//If dates are not the same and are not consecutive
 		if(!Date.equal(d1.getDate(), d2.getDate()) && (d1.getDate().getDay() != d2.getDate().nextDate().getDay() || d1.getDate().nextDate().getDay() != d2.getDate().getDay())) {
 			throw new MoreThanOneDayException();

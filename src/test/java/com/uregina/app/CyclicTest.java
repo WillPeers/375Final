@@ -45,7 +45,7 @@ public class CyclicTest
         }
     }
 
-    @Test(expected = FlightHasSameArrivalAndDeparture.class)
+    @Test
     public void oneFlight_Cyclic() {
         try{
             DateTime t1 = new DateTime(new Date(4, 25, 1999), new Time12(5, 30, AmPm.pm));
