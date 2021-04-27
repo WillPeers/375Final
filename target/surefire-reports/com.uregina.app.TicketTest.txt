@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.uregina.app.TicketTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in com.uregina.app.TicketTest
+Tests run: 10, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.uregina.app.TicketTest
 validFlights(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.uregina.app.TicketTest.validFlights(TicketTest.java:180)
 
-tooMuchFlightTime(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< ERROR!
+tooMuchFlightTime(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<com.uregina.exceptions.TooMuchFlightTimeException> but was<java.lang.AssertionError>
 	at com.uregina.app.TicketTest.tooMuchFlightTime(TicketTest.java:60)
 
@@ -14,10 +14,10 @@ noSchengenVisa(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.uregina.app.TicketTest.noSchengenVisa(TicketTest.java:120)
 
-triggerIncorrectFlightOrder(com.uregina.app.TicketTest)  Time elapsed: 0.002 s  <<< FAILURE!
+triggerIncorrectFlightOrder(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: Expected exception: com.uregina.exceptions.IncorrectFlightOrderException
 
-tooMuchLayover(com.uregina.app.TicketTest)  Time elapsed: 0 s  <<< ERROR!
+tooMuchLayover(com.uregina.app.TicketTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<com.uregina.exceptions.TooMuchFlightTimeException> but was<java.lang.AssertionError>
 	at com.uregina.app.TicketTest.tooMuchLayover(TicketTest.java:81)
 
