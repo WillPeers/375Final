@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire8587317122489989342\surefirebooter8654280996884060152.jar C:\Users\William\AppData\Local\Temp\surefire8587317122489989342 2021-04-27T17-08-05_951-jvmRun1 surefire15460038984963232417tmp surefire_01003306819181646426tmp"/>
+    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire8093630501623809525\surefirebooter15853123846862443990.jar C:\Users\William\AppData\Local\Temp\surefire8093630501623809525 2021-04-27T17-56-23_991-jvmRun1 surefire4453794539002758111tmp surefire_012689533398402496938tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\Git\375Final\target\test-classes;C:\dev\Git\375Final\target\classes;C:\Users\William\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\William\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire8587317122489989342\surefirebooter8654280996884060152.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire8093630501623809525\surefirebooter15853123846862443990.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -56,7 +56,7 @@
     <property name="java.class.version" value="59.0"/>
   </properties>
   <testcase name="oneFlight_Cyclic" classname="com.uregina.app.CyclicTest" time="0"/>
-  <testcase name="noFlights" classname="com.uregina.app.CyclicTest" time="0"/>
+  <testcase name="noFlights" classname="com.uregina.app.CyclicTest" time="0.001"/>
   <testcase name="multipleFlightsCyclic" classname="com.uregina.app.CyclicTest" time="0"/>
   <testcase name="oneFlight" classname="com.uregina.app.CyclicTest" time="0"/>
   <testcase name="multipleFlightsNonCyclic" classname="com.uregina.app.CyclicTest" time="0"/>
