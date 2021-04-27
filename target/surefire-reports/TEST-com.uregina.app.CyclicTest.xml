@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.DateTest" time="0.002" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.CyclicTest" time="0.002" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -55,8 +55,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="date2AfterDate1" classname="com.uregina.app.DateTest" time="0"/>
-  <testcase name="datesAreTheExactSame" classname="com.uregina.app.DateTest" time="0"/>
-  <testcase name="datesNotTheSameButConsecutive" classname="com.uregina.app.DateTest" time="0"/>
-  <testcase name="date1AfterDate2" classname="com.uregina.app.DateTest" time="0"/>
+  <testcase name="oneFlight_Cyclic" classname="com.uregina.app.CyclicTest" time="0.001">
+    <failure message="Expected exception: com.uregina.exceptions.FlightHasSameArrivalAndDeparture" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: com.uregina.exceptions.FlightHasSameArrivalAndDeparture
+</failure>
+  </testcase>
+  <testcase name="noFlights" classname="com.uregina.app.CyclicTest" time="0"/>
+  <testcase name="datesNotTheSameButConsecutive" classname="com.uregina.app.CyclicTest" time="0"/>
+  <testcase name="multipleFlightsCyclic" classname="com.uregina.app.CyclicTest" time="0"/>
+  <testcase name="oneFlight" classname="com.uregina.app.CyclicTest" time="0"/>
+  <testcase name="multipleFlightsNonCyclic" classname="com.uregina.app.CyclicTest" time="0"/>
 </testsuite>

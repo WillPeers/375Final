@@ -1,4 +1,5 @@
 package com.uregina.app;
+import java.lang.Math; 
 
 import com.uregina.exceptions.*;
 
@@ -19,7 +20,7 @@ public class Time12
 	*/
     public Time12 (int hours, int minutes, AmPm am_pm) throws InvalidTimeException
     {
-		if(hours<1||hours>=12) throw new InvalidTimeException();
+		if(hours<1||hours>12) throw new InvalidTimeException();
 		if(minutes<0||minutes>=60) throw new InvalidTimeException();
         this.hours=hours;
 		this.minutes=minutes;
@@ -75,7 +76,10 @@ public class Time12
 	{
 		int difference=0;
 		//Todo: add your code here
+		Time24 time1 = Time24.toTime24(t1.getHours(), t1.getMinutes(), t1.getAM_or_PM());
+		Time24 time2 = Time24.toTime24(t2.getHours(), t2.getMinutes(), t2.getAM_or_PM());
 
+		difference = Math.abs(time1.getMinutes() - time2.getMinutes()) + Math.abs((time1.getHours() - time2.getHours()) * 60);
 		// end of your code
 		return difference;
 	}

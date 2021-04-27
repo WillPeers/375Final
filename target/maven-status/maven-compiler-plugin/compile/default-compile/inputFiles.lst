@@ -3,6 +3,7 @@ C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\InvalidDateException.ja
 C:\dev\Git\375Final\src\main\java\com\uregina\app\Time24.java
 C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\NegativeTimeException.java
 C:\dev\Git\375Final\src\main\java\com\uregina\app\Date.java
+C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\FlightHasSameArrivalAndDeparture.java
 C:\dev\Git\375Final\src\main\java\com\uregina\app\AmPm.java
 C:\dev\Git\375Final\src\main\java\com\uregina\exceptions\InvalidTimeException.java
 C:\dev\Git\375Final\src\main\java\com\uregina\app\App.java

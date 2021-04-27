@@ -36,8 +36,8 @@ public class Time24
 	}
 	/**
 	 * Convert time 12-hour to 24-hour
-	 * @param  houra		hours in 12-hour time format (1:12)
-	 * @param  minutea	minutes in 24-hour time format (0:59)
+	 * @param  hours		hours in 12-hour time format (1:12)
+	 * @param  minutes	minutes in 24-hour time format (0:59)
 	 * @param  am_pm	enumerator with the value of am or pm
 	 * @return 		An equavalent Time24 object
 	 * 				a null for invalid input parameters
@@ -49,7 +49,18 @@ public class Time24
 	{
 		Time24 time=null;
 		//Todo : add your code here
+		int timeMinutes = minutes;
+		int timeHours = hours;
 
+		if(am_pm == AmPm.pm) {
+			timeHours += 12;
+		}
+
+		try{
+			time = new Time24(timeHours, timeMinutes);
+		} catch(Exception e) {
+
+		}
 
 		// End of your code
 		return time;

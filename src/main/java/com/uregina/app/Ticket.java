@@ -54,7 +54,7 @@ public class Ticket
 				System.out.println("1");
 			}
 
-			if(i + 1 == ticket.size()) {
+			if(i + 1 < ticket.size()) {
 				try{
 					totalLayoverTime += Flight.calculateLayoverTime(ticket.get(i), ticket.get(i + 1));
 				} catch(Exception e) {
@@ -82,8 +82,12 @@ public class Ticket
 		}
 
 		//6
-		if(hasCyclicTrip(ticket)) {
-			return false;
+		try{
+			if(hasCyclicTrip(ticket)) {
+				return false;
+			}
+		} catch(Exception e) {
+			
 		}
 
 		//end of your code
@@ -98,11 +102,25 @@ public class Ticket
 	 * 		(class: Flight , method: getArrivalAirport)
 	 * 		(class: Flight , method: getDepatureAirport)
 	*/
-	public static boolean hasCyclicTrip(ArrayList<Flight> ticket)
+	public static boolean hasCyclicTrip(ArrayList<Flight> ticket) throws FlightHasSameArrivalAndDeparture
 	{
 		//Todo : add your code here
-		
+		if(ticket.size() == 0 ) {
+			return false;
+		} else if(ticket.size() == 1) {
+			if(ticket.get(0).getDepatureAirport().equals(ticket.get(0).getArrivalAirport())) {
+				throw new FlightHasSameArrivalAndDeparture();
+			}
 
+			return false;
+		}
+
+		String departure = ticket.get(0).getDepatureAirport();
+		String end = ticket.get(ticket.size() - 1).getArrivalAirport();
+
+		if(departure.equals(end)) {
+			return true;
+		}
 		//Todo : end of your code
 		return false;
 	}
