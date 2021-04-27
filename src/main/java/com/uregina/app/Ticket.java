@@ -55,7 +55,11 @@ public class Ticket
 			}
 
 			if(i + 1 == ticket.size()) {
-				//totalLayoverTime += calculateLayoverTime(ticket.get(i), ticket.get(i + 1));
+				try{
+					totalLayoverTime += Flight.calculateLayoverTime(ticket.get(i), ticket.get(i + 1));
+				} catch(Exception e) {
+					
+				}
 
 				//7
 				if(ticket.get(i).getArrivalAirport() != ticket.get(i+1).getDepatureAirport()) {

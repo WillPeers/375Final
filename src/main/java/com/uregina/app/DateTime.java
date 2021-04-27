@@ -52,6 +52,34 @@ public class DateTime
 		int diff=0;
 		//Todo: add your code here
 
+		if(diff == 0)
+			throw new MoreThanOneDayException();
+
+		//If dates are not the same and are not consecutive
+		if(!Date.equal(d1.getDate(), d2.getDate()) && (d1.getDate().getDay() != d2.getDate().nextDate().getDay() || d1.getDate().nextDate().getDay() != d2.getDate().getDay())) {
+			throw new MoreThanOneDayException();
+		}
+
+		Time24 time1 = d1.getTime().toTime24();
+		Time24 time2 = d2.getTime().toTime24();
+
+		if(Date.equal(d1.getDate(), d2.getDate())) {
+			//diff = (time1.getMinutes() - time2.getMinutes()) + ((time1.getHours() - time2.getHours()) * 60);
+			diff = Time24.subtract(time1, time2);
+		} else if(d1.getDate().getDay() == d2.getDate().nextDate().getDay()) { //d1 is day after d2
+			try{
+				diff = Time24.subtract(new Time24(23, 59), time2) + time1.getMinutes() + (time1.getHours() * 60);	
+			} catch(Exception e) {
+
+			}	
+		} else if(d1.getDate().nextDate().getDay() == d2.getDate().getDay()) { //d2 is day after d1
+			try{
+				diff = Time24.subtract(new Time24(23, 59), time1) + time2.getMinutes() + (time2.getHours() * 60);
+			} catch(Exception e) {
+
+			}
+		}
+
 		//end of your code
 		return diff;
 	}
