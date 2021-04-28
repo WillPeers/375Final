@@ -66,7 +66,7 @@ public class TicketTest
         }
     }
 
-    /*@Test
+    @Test
     public void tooMuchLayover() {
         DateTime d1, d2, d3, d4;
 
@@ -85,7 +85,7 @@ public class TicketTest
         } catch(Exception e) {
 
         }
-    }*/
+    }
 
     @Test
     public void triggerIncorrectFlightOrder() {
@@ -108,7 +108,7 @@ public class TicketTest
         }
     }
 
-    /*@Test
+    @Test
     public void noSchengenVisa() {
         //"VIE","BRU"
         DateTime d1, d2;
@@ -124,7 +124,7 @@ public class TicketTest
         } catch(Exception e) {
            
         }
-    }*/
+    }
 
     @Test
     public void hasSchengenVisa() {
@@ -165,7 +165,7 @@ public class TicketTest
         }
     }
 
-    /*@Test
+    @Test
     public void validFlights() {
         DateTime d1, d2, d3, d4;
 
@@ -184,5 +184,5 @@ public class TicketTest
         } catch(Exception e) {
 
         }
-    }*/
+    }
 }
