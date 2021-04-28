@@ -110,6 +110,11 @@ public class Ticket
 	public static boolean hasCyclicTrip(ArrayList<Flight> ticket) throws FlightHasSameArrivalAndDeparture
 	{
 		//Todo : add your code here
+
+		ArrayList<String> departures = new ArrayList<String>();
+		ArrayList<String> arrivals = new ArrayList<String>();
+
+		
 		if(ticket.size() == 0 ) {
 			return false;
 		} else if(ticket.size() == 1) {
@@ -118,6 +123,38 @@ public class Ticket
 			}
 
 			return false;
+		}
+
+		
+
+		for(int i = 0; i < ticket.size(); i++) {
+			departures.add(ticket.get(i).getDepatureAirport());
+			arrivals.add(ticket.get(i).getArrivalAirport());
+		}
+
+		String temp1;
+		String temp2;
+
+		for(int i = 0; i < ticket.size(); i++) {
+			int counter1 = -1;
+			int counter2 = -1;
+
+			temp1 = departures.get(i);
+			temp2 = departures.get(i);
+
+			for(int j = 0; j < ticket.size(); j++) {
+				if(temp1 == departures.get(j)) {
+					counter1++;
+				}
+
+				if(temp2 == arrivals.get(j)) {
+					counter2++;
+				}
+			}
+
+			if(counter1 == 1 || counter2 == 1) {
+				return false;
+			}
 		}
 
 		String departure = ticket.get(0).getDepatureAirport();

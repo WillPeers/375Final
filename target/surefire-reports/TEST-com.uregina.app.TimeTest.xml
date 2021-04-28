@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire4314408213956539992\surefirebooter17213571813031012792.jar C:\Users\William\AppData\Local\Temp\surefire4314408213956539992 2021-04-27T18-10-07_648-jvmRun1 surefire17729369676803590891tmp surefire_07269943485465815819tmp"/>
+    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire18442955316837571014\surefirebooter15831107665184258866.jar C:\Users\William\AppData\Local\Temp\surefire18442955316837571014 2021-04-27T18-30-13_404-jvmRun1 surefire16100647941994165617tmp surefire_08555171316105727704tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\Git\375Final\target\test-classes;C:\dev\Git\375Final\target\classes;C:\Users\William\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\William\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire4314408213956539992\surefirebooter17213571813031012792.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire18442955316837571014\surefirebooter15831107665184258866.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
