@@ -153,16 +153,10 @@ public class Ticket
 			}
 
 			if(counter1 == 1 || counter2 == 1) {
-				return false;
+				return true;
 			}
 		}
-
-		String departure = ticket.get(0).getDepatureAirport();
-		String end = ticket.get(ticket.size() - 1).getArrivalAirport();
-
-		if(departure.equals(end)) {
-			return true;
-		}
+		
 		//Todo : end of your code
 		return false;
 	}

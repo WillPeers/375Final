@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.TicketTest" time="0.014" tests="9" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.uregina.app.TicketTest" time="0.019" tests="9" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire18442955316837571014\surefirebooter15831107665184258866.jar C:\Users\William\AppData\Local\Temp\surefire18442955316837571014 2021-04-27T18-30-13_404-jvmRun1 surefire16100647941994165617tmp surefire_08555171316105727704tmp"/>
+    <property name="sun.java.command" value="C:\Users\William\AppData\Local\Temp\surefire12038966680904424410\surefirebooter17008481714186664060.jar C:\Users\William\AppData\Local\Temp\surefire12038966680904424410 2021-04-27T18-40-05_435-jvmRun1 surefire7952107634047818356tmp surefire_01333263334034730982tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\dev\Git\375Final\target\test-classes;C:\dev\Git\375Final\target\classes;C:\Users\William\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\William\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire18442955316837571014\surefirebooter15831107665184258866.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\William\AppData\Local\Temp\surefire12038966680904424410\surefirebooter17008481714186664060.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -55,14 +55,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="validFlights" classname="com.uregina.app.TicketTest" time="0.003">
+  <testcase name="validFlights" classname="com.uregina.app.TicketTest" time="0.002">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.uregina.app.TicketTest.validFlights(TicketTest.java:183)
+	at com.uregina.app.TicketTest.validFlights(TicketTest.java:185)
 </failure>
     <system-out><![CDATA[Error: com.uregina.exceptions.MoreThanOneDayException: Date difference is more than 1
 ]]></system-out>
   </testcase>
-  <testcase name="hasSchengenVisa" classname="com.uregina.app.TicketTest" time="0"/>
+  <testcase name="hasSchengenVisa" classname="com.uregina.app.TicketTest" time="0.001"/>
   <testcase name="tooMuchFlightTime" classname="com.uregina.app.TicketTest" time="0"/>
   <testcase name="invalidIATA" classname="com.uregina.app.TicketTest" time="0"/>
   <testcase name="noSchengenVisa" classname="com.uregina.app.TicketTest" time="0">
@@ -70,8 +70,8 @@
 	at com.uregina.app.TicketTest.noSchengenVisa(TicketTest.java:123)
 </failure>
   </testcase>
-  <testcase name="isCyclicTrip" classname="com.uregina.app.TicketTest" time="0.003"/>
-  <testcase name="triggerIncorrectFlightOrder" classname="com.uregina.app.TicketTest" time="0.003"/>
+  <testcase name="isCyclicTrip" classname="com.uregina.app.TicketTest" time="0.008"/>
+  <testcase name="triggerIncorrectFlightOrder" classname="com.uregina.app.TicketTest" time="0.002"/>
   <testcase name="tooMuchLayover" classname="com.uregina.app.TicketTest" time="0.003">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at com.uregina.app.TicketTest.tooMuchLayover(TicketTest.java:84)

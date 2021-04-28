@@ -157,7 +157,9 @@ public class TicketTest
 
             ArrayList<Flight> ticket = new ArrayList<Flight>();
             ticket.add(new Flight("YQR", "DAA", d1, d2));
-            ticket.add(new Flight("DAA", "YQR", d3, d4));           
+            ticket.add(new Flight("DAA", "YQR", d3, d4));    
+            ticket.add(new Flight("YQR", "DAA", d1, d2));       
+            ticket.add(new Flight("DAA", "YQR", d3, d4));   
 
             assertFalse(Ticket.checkTicket(ticket, 30000, 10000000, 1000000, true));
         } catch(Exception e) {

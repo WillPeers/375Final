@@ -69,11 +69,13 @@ public class CyclicTest
 
             Flight f1 = new Flight("YQR", "YYC", t1, t1);
             Flight f2 = new Flight("YYC", "YQR", t1, t1);
+            Flight f3 = new Flight("YQR", "YYC", t1, t1);
 
             ArrayList<Flight> ticket = new ArrayList<Flight>();
 
             ticket.add(f1);
             ticket.add(f2);
+            ticket.add(f3);
 
             assertTrue(Ticket.hasCyclicTrip(ticket));
         } catch(Exception e) {
